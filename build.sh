@@ -82,7 +82,7 @@ if [ -d "./mruby/${BUILD_DIR}" ]; then
 fi
 
 echo "ngx_mruby configure ..."
-./configure ${CONFIG_OPT} --with-ngx-src-root=${NGINX_SRC} --with-ngx-config-opt="${NGINX_CONFIG_OPT}" $@
+./configure ${CONFIG_OPT} --enable-muslfts --with-ngx-src-root=${NGINX_SRC} --with-ngx-config-opt="${NGINX_CONFIG_OPT}" $@
 echo "ngx_mruby configure ... Done"
 
 echo "ngx_mruby building ..."
